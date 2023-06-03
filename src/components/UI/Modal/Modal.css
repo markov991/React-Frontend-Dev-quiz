@@ -1,0 +1,44 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  width: 60%;
+  /* width: 60%; */
+  background-color: aliceblue;
+  color: black;
+  padding: 3rem 3rem;
+  border-radius: 8px;
+  /* text-align: center; */
+}
+.modal h3 {
+  text-align: center;
+}
+#question {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.input_value {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+.input_value input {
+  margin-right: 0.5rem;
+}
+.hidden {
+  display: none;
+}
+#btnSubmit {
+  align-self: center;
+}
+#btnSubmit button {
+  font-size: 1rem;
+  padding: 0.5rem;
+}

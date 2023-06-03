@@ -1,0 +1,27 @@
+.button {
+  font-size: 1rem;
+  font-weight: 500;
+
+  padding: 15px;
+  margin: 20px;
+  border: none;
+
+  background-color: #fff;
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+
+  display: block;
+}
+.btn--default {
+  background-color: #fff;
+  color: #444;
+}
+.btn--correct {
+  background-color: green;
+  color: #fff;
+}
+.btn--incorect {
+  background-color: red;
+  color: black;
+}

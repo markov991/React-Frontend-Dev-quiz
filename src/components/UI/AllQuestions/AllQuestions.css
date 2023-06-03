@@ -1,0 +1,14 @@
+.questions {
+  width: 65%;
+  padding: 50px;
+  margin: auto;
+  display: flex;
+
+  justify-content: space-between;
+}
+.questions h2 {
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}

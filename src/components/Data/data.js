@@ -1,0 +1,207 @@
+const globalHtmlQuestions = [];
+const globalCssQuestions = [];
+const globalJsQuestions = [];
+
+class Questions {
+  constructor(type, question, answ, corAnsw) {
+    this.type = type;
+    this.question = question;
+    this.answ = answ;
+    this.corAnsw = corAnsw;
+    if (this.type === "HTML") {
+      globalHtmlQuestions.push(this);
+    }
+    if (this.type === "Css") {
+      globalCssQuestions.push(this);
+    }
+    if (this.type === "Js") {
+      globalJsQuestions.push(this);
+    }
+  }
+}
+
+const htmlQuestion1 = new Questions(
+  "HTML",
+  "What does HTML stands for?",
+  [
+    "Hyper Text Markup Lenguage",
+    "Home Tool Markup Language",
+    "Hyperlinks and Text Markup Language",
+    "Not important",
+  ],
+  0
+);
+
+const htmlQuestion2 = new Questions(
+  "HTML",
+  "Who is making the Web standards",
+  ["The world Wide Web Consortium", "Mozilla", "Google", "Microsoft"],
+  0
+);
+
+const htmlQuestion3 = new Questions(
+  "HTML",
+  "Who is the father of HTML?",
+  ["Rasmus Lerdorf", "Tim Berners-Lee", "Brendan Eich", "Sergey Brin"],
+  1
+);
+
+const htmlQuestion4 = new Questions(
+  "HTML",
+  "Which tag is used for inserting the largest heading in HTML?",
+  ["head", "h1", "h6", "heading"],
+  1
+);
+
+const htmlQuestion5 = new Questions(
+  "HTML",
+  "HTML program is saved using ___ extension.",
+  [".htmn", ".html", ".htnl", ".hmark"],
+  1
+);
+
+const cssQuestion1 = new Questions(
+  "Css",
+  "How can you created rounded corners using CSS3?",
+  [
+    "border[round]: 30px",
+    "corner-effect: round",
+    "border-radius: 30px",
+    "alpha-effect: round-corner",
+  ],
+  2
+);
+const cssQuestion2 = new Questions(
+  "Css",
+  "How do you add shadow to elements in CSS3?",
+  [
+    "box-shadow: 10px 10px 5px grey",
+    "shadow-right: 10px shadow-bottom: 10px",
+    "shadow-color: grey",
+    "alpha-effect[shadow]: 10px 10px 5px grey",
+  ],
+  0
+);
+
+const cssQuestion3 = new Questions(
+  "Css",
+  "How to resize a background image using CSS3?",
+  [
+    "background-size: 80px 60px",
+    "bg-dimensions: 80px 60px",
+    "background-proportion: 80px 60px",
+    "alpha-effect: bg-resize 80px 60px",
+  ],
+  0
+);
+
+const cssQuestion4 = new Questions(
+  "Css",
+  "How to rotate objects using CSS3?",
+  [
+    "object-rotation: 30deg",
+    "transform: rotate(30deg)",
+    "rotate-object: 30deg",
+    "transform: rotate-30deg-clockwise",
+  ],
+  1
+);
+
+const cssQuestion5 = new Questions(
+  "Css",
+  "What does the a stand for in RGBa?",
+  ["aqua", "Apple", "about", "alpha"],
+  3
+);
+
+const jsQuestion1 = new Questions(
+  "Js",
+  "Inside which HTML element do we put the JavaScript?",
+  ["<script>", "<scripting>", "<javascript>", "js"],
+  0
+);
+
+const jsQuestion2 = new Questions(
+  "Js",
+  " Which attribute needs to be changed to make elements invisible?",
+  ["visible", "invisibility", "visibilty ", "invisible"],
+  2
+);
+
+const jsQuestion3 = new Questions(
+  "Js",
+  "Which of the ways below is incorrect of instantiating a date?",
+  [
+    "new Date(dateString)",
+    "new Date(seconds)",
+    "new Date()",
+    "new Date(year, month, day, hours, minutes, seconds, milliseconds)",
+  ],
+  1
+);
+
+const jsQuestion4 = new Questions(
+  "Js",
+  "Which of the following is the tainted property of a window object in Java Script?",
+  ["Pathname", "Protocol", "Defaultstatus", "Host"],
+  2
+);
+
+const jsQuestion5 = new Questions(
+  "Js",
+  "Which of the following is used to capture all click events in a window?",
+  [
+    "window.captureEvents(Event.CLICK)",
+    "window.routeEvents(Event.CLICK )",
+    "window.handleEvents (Event.CLICK)",
+    "window.raiseEvents(Event.CLICK )",
+  ],
+  0
+);
+
+const jsQuestion6 = new Questions(
+  "Js",
+  "What language defines the behavior of a web page?",
+  ["HTML", "CSS", "XML", "Java Script"],
+  3
+);
+
+const jsQuestion7 = new Questions(
+  "Js",
+  "What is the alternate name for Java script?",
+  ["LimeScript", "Both a and d", "ECMScript", "ECMAScript"],
+  3
+);
+
+const jsQuestion8 = new Questions(
+  "Js",
+  "How to append a value to an array of Java Script?",
+  [
+    "arr[arr.length] = value",
+    "arr[arr.length+1] = new Arrays()",
+    "arr[arr.length-1] = value",
+    "arr[arr.length*1] = value",
+  ],
+  0
+);
+
+const jsQuestion9 = new Questions(
+  "Js",
+  "Why so Java and JavaScript have similar name?",
+  [
+    "Java Script is a stripped-down version of Java",
+    "The syntax of JavaScript is loosely based on Java syntax",
+    "They both support Object Oriented Programming",
+    "None of the above",
+  ],
+  1
+);
+
+const jsQuestion10 = new Questions(
+  "Js",
+  "Which of the following is not a valid JavaScript variable name?",
+  ["_java_and_ java _names", "2java", "javaandjava", "None of the above"],
+  1
+);
+
+export { globalCssQuestions, globalHtmlQuestions, globalJsQuestions };

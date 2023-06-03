@@ -1,0 +1,32 @@
+#loading {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  height: 1.5em;
+}
+
+#loadingbox {
+  display: flex;
+  width: 10em;
+  background: rgb(131, 131, 131);
+  position: relative;
+}
+
+#loadbar {
+  width: 0%;
+  background: rgb(16, 197, 62);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#percentage {
+  position: absolute;
+  display: inherit;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 1.5em;
+  align-items: center;
+}
